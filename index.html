@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>junho's portpolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery 3.6.js"></script>
+</head>
+
+<body id="wrap">
+    <div id="wrap">
+        <!-- nav영역 -->
+        <div class="nav_top on">
+            <div class="nav_div">
+                <h2 id="logo">junho' portpolio</h2>
+                <ul id="nav">
+                    <li>HOME</li>
+                    <li>ABOUT ME</li>
+                    <li>PROJECT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav영역 스크롤시 -->
+        <div class="nav_scroll off">
+            <div class="s_nav_div">
+                <h2 id="logo">junho' portpolio</h2>
+                <ul id="nav">
+                    <li>HOME</li>
+                    <li>ABOUT ME</li>
+                    <li>PROJECT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </div>
+        <!-- home 영역 -->
+        <header id="home" class="box_class">
+            <div class="self">
+                <span class="hi">안녕하세요</span>
+                <span class="front"></span>
+                <span class="kname">김준호입니다.</span>
+            </div>
+        </header>
+        <!-- aboutme 영역 -->
+        <section id="d_about" class="box_class">
+            <header id="aboutme">
+                <h1>ABOUT ME</h1>
+            </header>
+            <section id="a_self">
+                <p class="text">코리아IT아카데미의 프론트엔드, 백엔드 교육과정을 수료하면서 개인적인 프로젝트도 완료하였습니다.<br>
+                    React,javacript,java 하나하나 신경써서 배우고있습니다. 늦게 시작한 만큼 급하게 따라가는 것이 아닌 차근차근 제대로 배워나가고 있습니다.</p>
+            </section>
+            <footer id="skill">
+                <div class="s_box">
+                    <!-- 프론트엔드 로고 -->
+                    <h4>FRONTEND</h4>
+                    <div class="skill_box i_box1">
+                    </div>
+                </div>
+                <div class="s_box">
+                    <!-- 백엔드 로고 -->
+                    <h4>BACKEND</h4>
+                    <div class="skill_box i_box2">
+
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!-- project영역 -->
+        <section id="project" class="box_class">
+            <header id="p_logo">
+                <p>PROJECT</p>
+            </header>
+            <div id="p_div">
+                <div id="b_p">
+                    <div class="b_project b_p1 off">
+                    
+                    </div>
+                    <div class="b_project b_p2 on">
+                    
+                    </div>
+                    <div class="b_project b_p3 off">
+                    
+                    </div>
+                </div>
+                <div id="s_p">
+                    <p id="left">
+                        《</p>
+                    <div id="s_p_div">
+                        <ul>
+                            <li class="s_project s_p1 pos1" onclick="bpchange(0)">
+                                <span></span>
+                            </li>
+                            <li class="s_project s_p2 pos2" onclick="bpchange(1)"><span></span></li>
+                            <li class="s_project s_p3 pos3" onclick="bpchange(2)"><span></span></li>
+                        </ul>
+                    </div>
+
+                    <p id="right">》</p>
+                </div>
+            </div>
+        </section>
+        <!-- contact영역 -->
+        <footer id="contact" class="box_class">
+            <header>
+                <h1>CONTACT</h1>
+            </header>
+            <section>
+                <div id="c_detail">
+                    <div class="c_prop">
+                        <h2>이름:김준호</h2>
+                    </div>
+                    <div class="c_prop">
+                        <h2>생년월일 : 94.11.04</h2>
+                    </div>
+                    <div class="c_prop">
+                        <h2>EMAIL : wsngh0003@gmail.com</h2>
+                    </div>
+                </div>
+                <div id="c_pic">
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
