@@ -1,8 +1,4 @@
 // nav 스크롤
-
-
-
-
 window.addEventListener('scroll',function (){
     let n_nav =document.querySelector('.nav_top');
     let sc_nav = document.querySelector(".nav_scroll");
@@ -160,3 +156,21 @@ var rotate = (e) =>{
             break;
     }
 }
+// 스크롤 메뉴
+$(function(){
+    var menu = $('#nav > li');
+    var contents = $('#wrap > .box_class');
+    
+    menu.click(function(event){
+        event.preventDefault();
+    
+        var tg = $(this);
+        var i = tg.index();
+
+        var section = contents.eq(i);
+        var tt = section.offset().top;
+    
+        $('html, body').stop().animate({scrollTop:tt});
+    });
+    
+});
